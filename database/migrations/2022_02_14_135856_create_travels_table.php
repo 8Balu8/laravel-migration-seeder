@@ -17,7 +17,7 @@ class CreateTravelsTable extends Migration
             $table->id();
             $table->string('state', 50);
             $table->string('city', 50);
-            $table->text('description')->nullable();
+            $table->text('description');
             $table->decimal('price', 8, 2);
             $table->timestamps();
         });
